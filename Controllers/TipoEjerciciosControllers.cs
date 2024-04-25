@@ -4,7 +4,7 @@ using ProyectoJuli.Models;
 using ProyectoJuli.Data;
 using Microsoft.AspNetCore.Authorization;
 
-namespace EzpLaura2024.Controllers;
+namespace ProyectoJuli.Controllers;
 
 [Authorize]
 public class TipoEjerciciosController : Controller
