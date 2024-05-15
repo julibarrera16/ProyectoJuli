@@ -32,7 +32,7 @@ function ListadoTipoEjercicios() {
                     </button>
                     </td>
                     <td class="text-center">
-                    <button type="button" class="btn btn-danger" onclick="EliminarRegistro(${tipoDeEjercicio.tipoEjercicioID})">
+                    <button type="button" class="btn btn-danger" onclick="ValidacionEliminar(${tipoDeEjercicio.tipoEjercicioID})">
                     Eliminar
                     </button>
                     </td>
@@ -139,6 +139,30 @@ function GuardarRegistro() {
     });
 }
 
+function ValidacionEliminar(idEjercicioFisico) {
+    
+    var deseaEliminar = Swal.fire({
+        title: "¿Estas seguro de eliminar esta actividad?",
+        text: "No podras revertir esta accion!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: "Eliminado!",
+                text: "El tipo de actividad ha sido borrado.",
+                icon: "success"
+                
+            });
+            EliminarRegistro(idEjercicioFisico);
+        }
+       
+    });;
+}
+
 function EliminarRegistro(tipoEjercicioID) {
     $.ajax({
         // la URL para la petición
@@ -153,25 +177,7 @@ function EliminarRegistro(tipoEjercicioID) {
         // código a ejecutar si la petición es satisfactoria;
         // la respuesta es pasada como argumento a la función
         success: function (resultado) {
-            Swal.fire({
-                title: "¿Estas seguro de eliminar esta actividad?",
-                text: "No podras revertir esta accion!",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Yes!"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        title: "Eliminado!",
-                        text: "El tipo de actividad ha sido borrado.",
-                        icon: "success"
-                    });
-        
-                }
-               
-            });
+            
 
             ListadoTipoEjercicios();
         },
