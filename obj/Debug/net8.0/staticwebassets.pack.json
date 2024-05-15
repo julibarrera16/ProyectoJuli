@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Usuario\\Desktop\\programacionIII\\ProyectoJuli\\wwwroot\\img\\fondo.E.png",
+      "PackagePath": "staticwebassets\\img\\fondo.E.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Desktop\\programacionIII\\ProyectoJuli\\wwwroot\\img\\fondo.TipoEjerciciosFisicos.png",
+      "PackagePath": "staticwebassets\\img\\fondo.TipoEjerciciosFisicos.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Desktop\\programacionIII\\ProyectoJuli\\wwwroot\\img\\fondo.home.png",
+      "PackagePath": "staticwebassets\\img\\fondo.home.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Desktop\\programacionIII\\ProyectoJuli\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Usuario\\Desktop\\programacionIII\\ProyectoJuli\\wwwroot\\js\\EjercicioFisico.js",
+      "PackagePath": "staticwebassets\\js\\EjercicioFisico.js"
+    },
+    {
       "Id": "C:\\Users\\Usuario\\Desktop\\programacionIII\\ProyectoJuli\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

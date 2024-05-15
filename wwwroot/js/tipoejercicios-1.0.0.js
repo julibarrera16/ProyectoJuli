@@ -154,7 +154,7 @@ function EliminarRegistro(tipoEjercicioID) {
         // la respuesta es pasada como argumento a la función
         success: function (resultado) {
             Swal.fire({
-                title: "Estas seguro de eliminar el tipo de actividad?",
+                title: "¿Estas seguro de eliminar esta actividad?",
                 text: "No podras revertir esta accion!",
                 icon: "warning",
                 showCancelButton: true,
@@ -168,7 +168,9 @@ function EliminarRegistro(tipoEjercicioID) {
                         text: "El tipo de actividad ha sido borrado.",
                         icon: "success"
                     });
+        
                 }
+               
             });
 
             ListadoTipoEjercicios();

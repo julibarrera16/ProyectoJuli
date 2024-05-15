@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ProyectoJuli.Controllers;
 
-[Authorize]
+// [Authorize]
 public class TipoEjerciciosController : Controller
 {
     private ApplicationDbContext _context;
@@ -75,6 +75,7 @@ public class TipoEjerciciosController : Controller
                     };
                     _context.Add(tipoEjercicio);
                     _context.SaveChanges();
+                    resultado = "Tipo de Ejercicio guardado correctamente";
                 }
                 else
                 {
